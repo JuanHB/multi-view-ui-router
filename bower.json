@@ -1,0 +1,8 @@
+{
+  "name": "multi-view-ui-router",
+  "version": "1.0",
+  "dependencies": {
+    "angular": "angularjs#^1.5.0",
+    "angular-ui-router": "^0.2.18"
+  }
+}
