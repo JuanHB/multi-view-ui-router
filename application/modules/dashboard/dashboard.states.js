@@ -13,18 +13,19 @@
 
         // Configurando os estados
         $stateProvider
+            // estado pai para o dashboard
             .state('dashboard', {
                 // "abstract", significa que esse estado pode ser herdado por outros
-                //abstract : true,
-                url: "/dashboard",
+                abstract : true,
                 views : {
                     'dashboard' : {
                         templateUrl : 'application/layouts/dashboard.layout.html'
                     }
                 }
             })
+            // estado filho do dashboard, esse aponta para o index do dashboard
             .state('dashboard.index', {
-                url : "/home",
+                url : "/",
                 templateUrl : "application/modules/dashboard/partials/index.partial.html"
             })
 

@@ -13,7 +13,11 @@
 
         // modulo para as dependencias
         // da dashboard do projeto
-        'MultiViewApp.dashboard'
+        'MultiViewApp.dashboard',
+
+        // modulo com os submodulos da estrutura
+        // que possui dados dinamicos
+        'MultiViewApp.structure'
 
     ]);
 

@@ -35,64 +35,17 @@
     </style>
 
 </head>
-<body layout="row" ng-cloak>
+<body ng-cloak layout="row">
 
+    <!-- View da dashboard, com seu layout e estrutura proprios -->
+    <div layout="row" flex ui-view="dashboard" ></div>
 
-    <!--<div ng-view="login"></div>-->
-
-    <div ng-view="dashboard"></div>
-
-
-
-    <!--<md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
-                md-component-id="left"
-                ng-click="ul.toggleList()" aria-label="Show User List"
-                md-is-locked-open="$mdMedia('gt-sm')">
-
-        <md-toolbar class="md-whiteframe-z1">
-            <h3>Users</h3>
-        </md-toolbar>
-
-        <md-list>
-            <md-list-item ng-repeat="it in ul.users">
-                <md-button ng-click="ul.selectUser(it)" ng-class="{'selected' : it === ul.selected }">
-                    <md-icon md-svg-icon="{{it.avatar}}" class="avatar"></md-icon>
-                    {{it.name}}
-                </md-button>
-            </md-list-item>
-        </md-list>
-
-    </md-sidenav>
-
-
-    <div flex layout="column" tabIndex="-1" role="main" class="md-whiteframe-z2">
-
-        <md-toolbar layout="row" class="md-whiteframe-z1">
-            <md-button id="main" class="menu" hide-gt-sm ng-click="ul.toggleList()" aria-label="Show User List">
-                <md-icon md-svg-icon="menu" ></md-icon>
-            </md-button>
-            <h3>Angular Material - Starter App</h3>
-        </md-toolbar>
-
-        <md-content flex id="content">
-            <md-icon md-svg-icon="{{ul.selected.avatar}}" class="avatar"></md-icon>
-            <h2>{{ul.selected.name}}</h2>
-            <p>{{ul.selected.content}}</p>
-
-            <md-button class="contact" md-no-ink ng-click="ul.makeContact(ul.selected)" aria-label="Share with {{ ul.selected.name }}">
-                <md-tooltip>Contact {{ ul.selected.name }}</md-tooltip>
-                <md-icon md-svg-icon="share"></md-icon>
-            </md-button>
-        </md-content>
-
-    </div>-->
 
 
     <!-- Arquivos da aplicação  -->
 
     <!-- Modulo principal -->
-    <script src="application/app.module.js"></script>
-    <script src="application/app.config.js"></script>
+    <script src="application/MultiViewApp.module.js"></script>
 
     <!-- Modulo carregador de modulos de terceiros -->
     <script src="application/modules/core.module.js"></script>
@@ -100,6 +53,9 @@
     <!-- Modulo dashboard -->
     <script src="application/modules/dashboard/dashboard.module.js"></script>
     <script src="application/modules/dashboard/dashboard.states.js"></script>
+
+    <script src="application/modules/dashboard/services/tools-sidebar.service.js"></script>
+    <script src="application/modules/dashboard/controllers/dashboard.controller.js"></script>
 
 
 </body>
