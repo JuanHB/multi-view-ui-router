@@ -34,7 +34,7 @@
     }
 
     angular
-        .module('MultiViewApp.structure.tools-sidebar')
+        .module('MultiViewApp.dashboard')
         .factory('ToolsSidebarService', ToolsSidebarService);
 
 })();

@@ -18,9 +18,7 @@
                 // "abstract", significa que esse estado pode ser herdado por outros
                 abstract : true,
                 views : {
-                    'dashboard' : {
-                        templateUrl : 'application/layouts/dashboard.layout.html'
-                    }
+                    'dashboard' : { templateUrl : 'application/layouts/dashboard.layout.html' }
                 }
             })
             // estado filho do dashboard, esse aponta para o index do dashboard
